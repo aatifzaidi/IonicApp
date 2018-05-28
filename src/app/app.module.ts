@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SecondPage } from '../pages/second/second';
 import { ListIPage } from '../pages/list-i/list-i';
 import { ListIiPage } from '../pages/list-ii/list-ii';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ListIiPage } from '../pages/list-ii/list-ii';
     
   ],
   providers: [
+    InAppBrowser,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

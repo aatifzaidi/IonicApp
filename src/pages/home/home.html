@@ -3,29 +3,28 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>❣ Sweet Home ❣ </ion-title>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
       <ion-item>
-          <button ion-button secondary 
-          color="dark">
-        Sun Technologies Inc.
-      </button>
+          <button ion-button full secondary menuToggle color="dark">
+              <ion-icon name="list" margin></ion-icon>
+            Toggle Menu</button>
       </ion-item>
     
+    <button ion-button secondary 
+        color="dark">
+      Sun Technologies Inc.
+    </button>
+  
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle color="dark">Toggle Menu</button>
-
-    <button color="dark" ion-button (click)="navigateToSecondPage()">
-      Navigate to Second Page</button>
+  <button color="custom" ion-button icon-right (click)="navigateToSecondPage()">     
+       Sign up with
+       <ion-icon name="logo-googleplus"></ion-icon>
+      </button>
 
     </ion-content>
 

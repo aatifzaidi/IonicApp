@@ -15,4 +15,48 @@
 
 <ion-content padding>
 
+  <ion-card>
+    <!-- Ion Avatar -->
+      <ion-item>
+          <ion-avatar item-start>
+            <img src="https://avatars0.githubusercontent.com/u/25859207?s=460">
+          </ion-avatar>
+          <h2>Aatif Zaidi</h2>
+          <p>May 28, 2018</p>
+        </ion-item>
+    <img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/evolving_google_identity_share.jpg">
+  </ion-card>
+
+
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-map-madison.png">
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+  
+    <ion-item>
+      <ion-icon name="home" item-start large></ion-icon>
+      <h2>Home</h2>
+      <p>Koramangala, Bengaluru, KA</p>
+    </ion-item>
+  
+    <ion-item>
+      <ion-icon name="construct" item-left large ></ion-icon>
+      <h2>Sun Technologies</h2>
+      <p>HBR Layout. Bengaluru, KA</p>
+    </ion-item>
+  
+    <ion-item>
+      <span item-left>40 min</span>
+      <span item-left>(13 km)</span>
+      <button ion-button icon-left clear item-end>
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button>
+    </ion-item>
+
+    <button ion-button  round (click)="openWithInAppBrowser('https://plus.google.com/up/')">Sign up with In App browser</button>
+    <button ion-button  round (click)="openWithCordovaBrowser('https://plus.google.com/up/')">Sign up with Cordova browser</button>
+
 </ion-content>

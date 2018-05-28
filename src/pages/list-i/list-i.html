@@ -10,14 +10,57 @@
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
         </button>
-    <ion-title>List I Page</ion-title>
+    <ion-title>Bitcoins</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <!--Action Sheet Controller-->
 <ion-content padding>
-    <button ion-button block (click)="openMenu()">
+    <button ion-button block color="custom" (click)="openMenu()">
         Show Action Sheet
       </button>
-</ion-content>
+
+<!--Basic Alert Controller-->
+
+    <button ion-button block color="custom" (click)="showAlert()">
+        Show Basic Alert
+      </button>  
+
+<!--Prompt Alert Controller-->
+    <button ion-button block color="custom" (click)="showPrompt()">
+        Show Prompt Alert
+      </button>
+
+<!--Confirmation Alert Controller-->
+<button ion-button block color="custom" (click)="showConfirm()">
+    Show Confirmation Alert
+  </button>
+
+<!--Radio Alert Controller-->
+<button ion-button block color="custom" (click)="showRadio()">
+    Show Radio Alert
+  </button>
+
+<!--Checkbox Alert Controller-->
+<button ion-button block color="custom" (click)="showCheckbox()">
+    Show Checkbox Alert
+  </button>
+
+  <ion-item>
+      <ion-icon name="logo-bitcoin" item-start></ion-icon>
+      Collections
+      <ion-badge color="custom" item-end>260k</ion-badge>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Withdraw Amount</ion-label>
+        <ion-checkbox color="primary" checked="true"></ion-checkbox>
+    </ion-item>
+
+  <ion-item>
+  <ion-label>Withdrawal Time</ion-label>
+  <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+  </ion-item>
+
+    </ion-content>
